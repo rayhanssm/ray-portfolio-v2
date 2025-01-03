@@ -42,18 +42,15 @@ function WorkDetailView({ id }: { id: string }) {
               {currentWorkDetail.tech}
             </p>
             <div className="flex gap-3">
-              {currentWorkDetail.links.map(
-                (l, index) =>
-                  l.title && (
-                    <LinkCustom
-                      key={index}
-                      href={l.url}
-                      text={l.title}
-                      target
-                      rel
-                    />
-                  )
-              )}
+              {currentWorkDetail.links.map((l, index) => (
+                <LinkCustom
+                  key={index}
+                  href={l.url}
+                  text={l.title}
+                  target
+                  rel
+                />
+              ))}
             </div>
           </div>
         </div>

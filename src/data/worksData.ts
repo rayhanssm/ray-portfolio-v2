@@ -49,8 +49,8 @@ export const worksContent: IWorksContent[] = [
     tech: "Next.js, Material UI, HTML, CSS, JavaScript.",
     links: [
       {
-        title: "",
-        url: "",
+        title: "GitHub",
+        url: "https://github.com/rayhanssm/onboarding-jp",
       },
     ],
     description:
