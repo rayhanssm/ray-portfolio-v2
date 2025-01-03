@@ -10,6 +10,8 @@ export interface ILinkCustom {
   text: string;
   href: Url;
   className?: string;
+  target?: boolean;
+  rel?: boolean;
 }
 
 export interface ISummaryContent {
@@ -25,4 +27,19 @@ export interface IFooterLink {
 export interface IHomeWorkSectionCard {
   variant: Variants;
   image: string;
+}
+
+export interface IWorksContent {
+  id: string;
+  image: string;
+  title: string;
+  year: string;
+  description: string;
+  icons: string[];
+  role: string;
+  tech: string;
+  links: {
+    title: string;
+    url: string;
+  }[];
 }

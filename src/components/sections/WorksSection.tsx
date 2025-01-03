@@ -56,7 +56,7 @@ function WorksSection() {
       />
       <div className="absolute flex justify-center items-center">
         <div className="flex flex-col items-center gap-6 z-10">
-          <h1 className="text-4xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+          <h1 className="font-bold text-4xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
             My Works
           </h1>
           <LinkCustom text="View Works" href="/works" />

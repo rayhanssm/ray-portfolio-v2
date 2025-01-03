@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <div className="px-24 h-[100vh] flex justify-around items-center bg-gradient-to-bl from-slate-900 from-5% to-indigo-950 to-95%">
       <div className="flex flex-col gap-4">
-        <h1 className="font-medium text-6xl">
+        <h1 className="font-bold text-6xl">
           Hi,
           <span className="text-6xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
             {` Ray `}
