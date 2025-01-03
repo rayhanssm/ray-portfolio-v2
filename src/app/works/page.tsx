@@ -1,3 +1,4 @@
+import WorkView from "@/components/views/WorkView";
 import { Metadata } from "next";
 import React from "react";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 function Works() {
-  return <div>Works</div>;
+  return <WorkView />;
 }
 
 export default Works;

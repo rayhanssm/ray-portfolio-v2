@@ -7,12 +7,12 @@ import React, { useEffect, useState } from "react";
 
 const navItems: INav[] = [
   {
-    page: "/about",
-    title: "About",
-  },
-  {
     page: "/works",
     title: "Works",
+  },
+  {
+    page: "/about",
+    title: "About",
   },
 ];
 
