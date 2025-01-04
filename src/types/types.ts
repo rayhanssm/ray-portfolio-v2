@@ -9,7 +9,6 @@ export interface INav {
 export interface ILinkCustom {
   text: string;
   href: Url;
-  className?: string;
   target?: boolean;
   rel?: boolean;
 }
@@ -42,4 +41,24 @@ export interface IWorksContent {
     title: string;
     url: string;
   }[];
+}
+
+export interface IAboutContent {
+  url: string;
+  title: string;
+}
+
+export interface IExperienceContent {
+  company: string;
+  image: string;
+  location: string;
+  jobs: { title: string; date: string }[];
+}
+
+export interface IEducationContent {
+  school: string;
+  image: string;
+  location: string;
+  year: string;
+  program: string;
 }

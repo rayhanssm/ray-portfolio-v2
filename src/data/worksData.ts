@@ -79,7 +79,7 @@ export const worksContent: IWorksContent[] = [
     title: "DanBam",
     year: "2021",
     role: "Developer (team)",
-    icons: ["flowbite:html-solid", "flowbite:css-solid"],
+    icons: ["flowbite:html-solid", "flowbite:css-solid", "ri:javascript-fill"],
     tech: "HTML, CSS, JavaScript.",
     links: [
       {

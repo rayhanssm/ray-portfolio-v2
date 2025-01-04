@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "motion/react";
-import { useRouter } from "next/navigation";
 import { ISummaryContent } from "@/types/types";
 
 const summaryContent: ISummaryContent[] = [
@@ -15,8 +14,6 @@ const summaryContent: ISummaryContent[] = [
 ];
 
 function SummarySection() {
-  const { push } = useRouter();
-
   return (
     <div className="h-[40vh] bg-slate-900 relative">
       <div
@@ -36,7 +33,7 @@ function SummarySection() {
             <h2 className="text-slate-500">{c.subTitle}</h2>
           </div>
         ))}
-        <motion.button
+        <motion.a
           className="w-fit px-6 py-2 rounded-2xl text-sky-950 bg-yellow-500 z-10"
           initial={{ boxShadow: "1px 1px 15px #fef08a" }}
           animate={{ boxShadow: "1px 1px 30px #eab308" }}
@@ -46,10 +43,12 @@ function SummarySection() {
             repeatType: "reverse",
             ease: "easeInOut",
           }}
-          onClick={() => push("/about")}
+          href="https://drive.google.com/file/d/1okXW3SV86UOlJeVQeZ4ZC20K-KexqB5B/view"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          About Me
-        </motion.button>
+          View Resume
+        </motion.a>
       </div>
     </div>
   );
