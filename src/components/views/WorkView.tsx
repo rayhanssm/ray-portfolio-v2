@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "motion/react";
 
 function WorkView() {
   return (
@@ -15,7 +16,14 @@ function WorkView() {
         A selection of projects I&apos;ve worked on, showcasing both my personal
         and collaborative experience.
       </p>
-      <div className="grid grid-cols-3 gap-y-10 py-14 place-items-center">
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 100 }}
+        transition={{
+          ease: "easeInOut",
+        }}
+        className="grid grid-cols-3 gap-y-10 py-14 place-items-center"
+      >
         {worksContent.map((c, index) => (
           <Link
             key={index}
@@ -48,7 +56,7 @@ function WorkView() {
             </div>
           </Link>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
