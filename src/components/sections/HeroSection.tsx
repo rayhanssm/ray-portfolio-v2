@@ -4,7 +4,7 @@ import LinkCustom from "../LinkCustom";
 
 function HeroSection() {
   return (
-    <div className="px-3 md:px-12 h-screen flex justify-around items-center bg-gradient-to-bl from-slate-900 from-5% to-indigo-950 to-95%">
+    <div className="px-4 md:px-12 h-screen flex justify-around items-center bg-gradient-to-bl from-slate-900 from-5% to-indigo-950 to-95%">
       <div className="flex flex-col max-md:items-center gap-4">
         <h1 className="font-bold xl:text-6xl text-4xl">
           Hi,

@@ -8,9 +8,9 @@ function WorkDetailView({ id }: { id: string }) {
   const currentWorkDetail = worksContent.find((content) => content.id === id);
 
   return (
-    <div className="p-24 min-h-[calc(100vh-80px)] bg-gradient-to-bl from-slate-900 to-indigo-950">
+    <div className="p-4 py-24 md:p-24 min-h-[calc(100vh-80px)] bg-gradient-to-bl from-slate-900 to-indigo-950">
       {currentWorkDetail?.title ? (
-        <div className="grid grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-8">
           <div className="col-span-2">
             <div className="flex justify-between items-center mb-5">
               <h1 className="font-semibold text-4xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
@@ -41,7 +41,7 @@ function WorkDetailView({ id }: { id: string }) {
               <br />
               {currentWorkDetail.tech}
             </p>
-            <div className="flex gap-3">
+            <div className="flex flex-col md:flex-row gap-4">
               {currentWorkDetail.links.map((l, index) => (
                 <LinkCustom
                   key={index}

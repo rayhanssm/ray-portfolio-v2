@@ -23,7 +23,7 @@ function SummarySection() {
           opacity: 0.5,
         }}
       />
-      <div className="px-3 md:px-24 h-full flex flex-col md:flex-row gap-10 justify-center items-center">
+      <div className="px-4 md:px-24 h-full flex flex-col md:flex-row gap-10 justify-center items-center">
         {summaryContent.map((c, index) => (
           <div
             key={index}

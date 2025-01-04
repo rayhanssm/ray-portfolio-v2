@@ -21,7 +21,7 @@ function Footer() {
   return (
     <footer className="h-20 bg-gradient-to-t from-slate-900 to-transparent">
       <div className="h-[0.5px] rounded-full w-full bg-gradient-to-r from-transparent via-slate-400 to-transparent" />
-      <div className="px-3 md:px-24 w-full h-full flex justify-between items-center">
+      <div className="px-4 md:px-24 w-full h-full flex justify-between items-center">
         <p className="text-sm md:text-base text-slate-400">
           Created by Ray Mantiri 2024
         </p>

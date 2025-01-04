@@ -82,51 +82,57 @@ const toolsIcon: { icon: string; title: string }[] = [
 
 function AboutView() {
   return (
-    <div className="p-24 min-h-[calc(100vh-80px)] bg-gradient-to-br from-slate-900 to-indigo-950">
-      <div className="grid grid-cols-3 gap-8">
+    <div className="px-4 py-24 md:p-24 min-h-[calc(100vh-80px)] bg-gradient-to-br from-slate-900 to-indigo-950">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left */}
-        <div className="col-span-1">
+        <div className="md:col-span-1">
           <div className="flex flex-col gap-5">
-            <Image
-              src="/assets/potrait-ray.png"
-              alt="Potrait of Ray"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-auto rounded-3xl shadow-2xl shadow-violet-950"
-            />
-            <div>
-              <p className="font-bold text-2xl">Ray Hans Sebastian Mantiri</p>
-              <p className="text-slate-400 text-sm">
-                Jakarta, Indonesia | Batam, Indonesia
-              </p>
-            </div>
-            <div className="flex flex-col gap-2">
-              {aboutContent.map((c, index) => (
-                <div
-                  key={index}
-                  className="flex gap-1 items-center hover:underline w-fit"
-                >
-                  <a
-                    href={c.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=""
+            <div className="flex flex-col gap-3">
+              <Image
+                src="/assets/potrait-ray.png"
+                alt="Potrait of Ray"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-auto hidden md:block rounded-3xl shadow-2xl shadow-violet-950"
+              />
+              <div>
+                <p className="font-bold text-4xl md:text-2xl">
+                  Ray Hans Sebastian Mantiri
+                </p>
+                <p className="text-slate-400 text-lg md:text-sm">
+                  Jakarta, Indonesia | Batam, Indonesia
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                {aboutContent.map((c, index) => (
+                  <div
+                    key={index}
+                    className=" w-fit flex gap-1 items-center hover:underline"
                   >
-                    {c.title}
-                  </a>
-                  <Icon icon="proicons:open" />
-                </div>
-              ))}
+                    <a
+                      href={c.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xl md:text-base"
+                    >
+                      {c.title}
+                    </a>
+                    <Icon icon="proicons:open" />
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
-              <h2 className="mb-3 font-bold text-xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+
+            <div className="p-4 md:p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
+              <h2 className="mb-3 font-bold text-2xl md:text-xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
                 Technology/tools
               </h2>
               <div className="flex flex-wrap gap-x-4 gap-y-6">
                 {toolsIcon.map((t, index) => (
                   <div key={index} className="relative group">
-                    <Icon icon={t.icon} className="w-8 h-8" />
+                    <Icon icon={t.icon} className="w-10 md:w-8 h-10 md:h-8" />
                     <div className="absolute border border-violet-900 text-center bg-violet-950 text-white text-xs rounded-xl px-2 py-1 z-10 mb-2 bottom-full left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all">
                       {t.title}
                     </div>
@@ -138,8 +144,8 @@ function AboutView() {
         </div>
 
         {/* Right */}
-        <div className="col-span-2 flex flex-col gap-10">
-          <div className="p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
+        <div className="md:col-span-2 flex flex-col gap-10">
+          <div className="p-4 md:p-8 text-lg md:text-base flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
             <p>Hi, I&apos;m Ray!</p>
             <p>
               I&apos;m a computer science graduate with a deep passion for web
@@ -164,13 +170,16 @@ function AboutView() {
           </div>
 
           {/* Experience Section */}
-          <div className="p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
-            <h2 className="mb-3 font-bold text-2xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+          <div className="p-4 md:p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
+            <h2 className="mb-3 font-bold text-center md:text-left text-3xl md:text-2xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
               Experience
             </h2>
             <div className="flex flex-col gap-10">
               {experienceContent.map((e, index) => (
-                <div key={index} className="flex gap-8">
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row gap-4 md:gap-8"
+                >
                   <Image
                     src={e.image}
                     alt={e.company + "'s logo"}
@@ -180,13 +189,17 @@ function AboutView() {
                     className="w-[150px] h-fit"
                   />
                   <div>
-                    <p className="text-xl font-semibold">{e.company}</p>
-                    <p className="text-sm text-slate-400 mb-3">{e.location}</p>
+                    <p className="text-2xl md:text-xl font-semibold">
+                      {e.company}
+                    </p>
+                    <p className="text-lg md:text-sm text-slate-400 mb-3">
+                      {e.location}
+                    </p>
                     <div className="flex flex-col gap-2">
                       {e.jobs.map((j, index) => (
                         <div key={index}>
-                          <p className="mb-1">{j.title}</p>
-                          <p className="py-1 px-3 w-fit text-sm bg-slate-700 rounded-full">
+                          <p className="mb-1 text-xl md:text=base">{j.title}</p>
+                          <p className="py-1 px-3 w-fit text-base md:text-sm bg-slate-700 rounded-full">
                             {j.date}
                           </p>
                         </div>
@@ -199,13 +212,16 @@ function AboutView() {
           </div>
 
           {/* Education Section */}
-          <div className="p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
-            <h2 className="font-bold text-2xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+          <div className="p-4 md:p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
+            <h2 className="font-bold  text-center md:text-left text-3xl md:text-2xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
               Education
             </h2>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-10">
               {educationContent.map((e, index) => (
-                <div key={index} className="flex items-center gap-8">
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row gap-4 md:gap-8"
+                >
                   <Image
                     src={e.image}
                     alt={e.school + "'s logo"}
@@ -215,12 +231,16 @@ function AboutView() {
                     className="w-[150px] h-fit"
                   />
                   <div>
-                    <p className="text-xl font-semibold">{e.school}</p>
-                    <p className="text-sm text-slate-400 mb-2">{e.location}</p>
-                    <p className="py-1 px-3 w-fit text-sm bg-slate-700 rounded-full mb-2">
+                    <p className="text-2xl md:text-xl font-semibold">
+                      {e.school}
+                    </p>
+                    <p className="text-lg md:text-sm text-slate-400 mb-2">
+                      {e.location}
+                    </p>
+                    <p className="py-1 px-3 w-fit text-lg md:text-sm bg-slate-700 rounded-full mb-2">
                       {e.year}
                     </p>
-                    <p className="">{e.program}</p>
+                    <p className="text-xl md:text-base">{e.program}</p>
                   </div>
                 </div>
               ))}
