@@ -45,7 +45,7 @@ const cardContent: IHomeWorkSectionCard[] = [
 
 function WorksSection() {
   return (
-    <div className="relative h-[100vh] px-24 flex justify-center items-center">
+    <div className="relative h-[80vh] px-4 md:px-24 flex justify-center items-center">
       <Image
         alt="circle illustration"
         src="/assets/bg-circle.svg"
@@ -64,7 +64,7 @@ function WorksSection() {
       </div>
 
       <motion.div
-        viewport={{ amount: 0.8 }}
+        viewport={{ amount: 1 }}
         className="h-full flex justify-center items-center z-20"
       >
         {cardContent.map((v, index) => (

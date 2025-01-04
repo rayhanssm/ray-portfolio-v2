@@ -4,11 +4,11 @@ import LinkCustom from "../LinkCustom";
 
 function HeroSection() {
   return (
-    <div className="px-24 h-[100vh] flex justify-around items-center bg-gradient-to-bl from-slate-900 from-5% to-indigo-950 to-95%">
-      <div className="flex flex-col gap-4">
-        <h1 className="font-bold text-6xl">
+    <div className="px-4 md:px-12 h-screen flex justify-around items-center bg-gradient-to-bl from-slate-900 from-5% to-indigo-950 to-95%">
+      <div className="flex flex-col max-md:items-center gap-4">
+        <h1 className="font-bold xl:text-6xl text-4xl">
           Hi,
-          <span className="text-6xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+          <span className="xl:text-6xl text-4xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
             {` Ray `}
           </span>
           here!
@@ -20,7 +20,7 @@ function HeroSection() {
       </div>
 
       {/* Illustration */}
-      <div className="relative w-[512px] h-[512px]">
+      <div className="relative w-[512px] h-[512px] hidden md:block">
         <img
           className="absolute top-0 right-0"
           src="/assets/projector.svg"

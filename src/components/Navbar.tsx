@@ -33,9 +33,9 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="px-14 py-5 z-50 w-full fixed top-0">
+    <nav className="px-4 md:px-14 py-5 z-50 w-full fixed top-0">
       <div
-        className={`px-10 rounded-full py-3 flex justify-between items-center transition-all ${
+        className={`px-5 md:px-10 py-3 rounded-full flex justify-between items-center transition-all ${
           navScroll ? "bg-slate-900/40 backdrop-blur-lg" : ""
         }`}
       >
@@ -56,7 +56,7 @@ function Navbar() {
             <Link
               key={index}
               href={nav.page}
-              className={`text-2xl transition-all ${
+              className={`text-xl md:text-2xl transition-all ${
                 pathName === "/" + nav.title.toLowerCase()
                   ? "text-yellow-300"
                   : "text-inherit"
