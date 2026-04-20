@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import LinkCustom from "../LinkCustom";
+import Image from "next/image";
 
 function HeroSection() {
   return (
@@ -21,11 +22,13 @@ function HeroSection() {
 
       {/* Illustration */}
       <div className="relative w-[512px] h-[512px] hidden md:block">
-        <img
+        <Image
           className="absolute top-0 right-0"
           src="/assets/projector.svg"
           alt="illustration of projecting ray's logo"
           draggable={false}
+          width="512"
+          height="523"
         />
         <motion.div
           animate={{ opacity: [1, 0.1, 0.9, 0.5, 1, 0.8] }}
@@ -34,11 +37,13 @@ function HeroSection() {
             repeat: Infinity,
           }}
         >
-          <img
+          <Image
             className="absolute top-0 right-0"
             src="/assets/projector-light.svg"
             alt="illustration of projecting ray's logo"
             draggable={false}
+            width="512"
+            height="523"
           />
         </motion.div>
       </div>
