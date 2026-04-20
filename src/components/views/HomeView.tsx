@@ -11,10 +11,10 @@ function HomeView() {
       <HeroSection />
 
       {/* Summary Section */}
-      <SummarySection />
+      {/* <SummarySection /> */}
 
       {/* Works Section */}
-      <WorksSection />
+      {/* <WorksSection /> */}
     </main>
   );
 }

@@ -10,7 +10,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const aboutContent: IAboutContent[] = [
   {
-    title: "rayhansmantiri@gmail.com",
+    title: "Mail",
     url: "mailto:rayhansmantiri@gmail.com",
   },
   {
@@ -24,6 +24,14 @@ const aboutContent: IAboutContent[] = [
 ];
 
 const experienceContent: IExperienceContent[] = [
+  {
+    company: "HashMicro",
+    image: "/assets/about/hashmicro.webp",
+    location: "Jakarta, Indonesia",
+    jobs: [
+      { title: "Front-End Web Developer", date: "Mar 2025 - Apr 2026" },
+    ],
+  },
   {
     company: "Bosshire",
     image: "/assets/about/bosshire.png",
@@ -76,8 +84,10 @@ const toolsIcon: { icon: string; title: string }[] = [
   { icon: "devicon:css3", title: "CSS" },
   { icon: "logos:javascript", title: "JavaScript" },
   { icon: "devicon:typescript", title: "TypeScript" },
+  { icon: "devicon:php", title: "PHP" },
   { icon: "mdi:github", title: "GitHub" },
   { icon: "devicon:figma", title: "Figma" },
+  { icon: "bi:wordpress", title: "WordPress" },
 ];
 
 function AboutView() {

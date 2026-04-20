@@ -34,7 +34,7 @@ function WorkDetailView({ id }: { id: string }) {
             <p className="mt-8 text-lg text-slate-400">
               Role: {currentWorkDetail.role}
             </p>
-            <p className="mt-3 mb-5 text-lg">
+            <p className="mt-3 mb-2 text-lg">
               <span className="text-sm text-slate-400">
                 Technology/tools used:
               </span>{" "}

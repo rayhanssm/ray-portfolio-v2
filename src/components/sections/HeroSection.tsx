@@ -13,8 +13,8 @@ function HeroSection() {
           </span>
           here!
         </h1>
-        <p className="text-xl font-extralight mb-5">
-          I&apos;m a web dev enthusiast.
+        <p className="text-xl font-extralight mb-5 max-w-[500px]">
+          Front-End Developer with 1+ year of experience building web products.
         </p>
         <LinkCustom text="Get to Know Me" href={"/about"} />
       </div>
