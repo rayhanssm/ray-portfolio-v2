@@ -28,9 +28,7 @@ const experienceContent: IExperienceContent[] = [
     company: "HashMicro",
     image: "/assets/about/hashmicro.webp",
     location: "Jakarta, Indonesia",
-    jobs: [
-      { title: "Front-End Web Developer", date: "Mar 2025 - Apr 2026" },
-    ],
+    jobs: [{ title: "Front-End Web Developer", date: "Mar 2025 - Apr 2026" }],
   },
   {
     company: "Bosshire",
@@ -156,20 +154,29 @@ function AboutView() {
         {/* Right */}
         <div className="md:col-span-2 flex flex-col gap-10">
           <div className="p-4 md:p-8 text-lg md:text-base flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
-            <p>Hi, I&apos;m Ray!</p>
             <p>
-              I&apos;m a computer science graduate with a deep passion for web
-              development and design.
+              Hi! I’m Ray, a Front-End Developer with 2 years of experience in
+              building and optimizing web products across 5 APAC markets.
             </p>
             <p>
-              Through my experience in front-end development and UI/UX design,
-              I&apos;ve realized the importance of creating interfaces that are
-              both functional and aesthetically pleasing to maximize user
-              satisfaction.
+              My work focuses on creating interfaces that are as scalable and
+              functional as they are high-performing. I specialize in modern
+              development with React.js, Next.js, and WordPress, but I believe
+              that great code is only half the story. I enjoy bridging the gap
+              between technical execution and creative vision—whether it’s
+              ensuring seamless API integrations with back-end systems,
+              collaborating with branding teams to bring designs to life, or
+              working alongside SEO specialists to boost performance.
             </p>
             <p>
-              This challenge has motivated me to continuously grow and expand my
-              skills, so I can contribute meaningfully in the future!
+              For me, success is built on cross-functional collaboration and a
+              user-centric mindset. I’m passionate about writing clean,
+              efficient code that delivers a smooth, intuitive experience for
+              the end user.
+            </p>
+            <p>
+              I’m glad you’re here to check out my work. Let’s connect and
+              create something impactful together!
             </p>
             <LinkCustom
               href="https://drive.google.com/file/d/1okXW3SV86UOlJeVQeZ4ZC20K-KexqB5B/view"
