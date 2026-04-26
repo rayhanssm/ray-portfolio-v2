@@ -15,7 +15,7 @@ function HeroSection() {
           here!
         </h1>
         <p className="text-xl font-extralight mb-5 max-w-[500px]">
-          Front-End Developer with 1+ year of experience building web products.
+          Front-End Developer with 2+ years of experience building web products.
         </p>
         <LinkCustom text="Get to Know Me" href={"/about"} />
       </div>
