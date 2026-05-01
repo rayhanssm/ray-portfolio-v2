@@ -2,6 +2,23 @@ import { IWorksContent } from "@/types/types";
 
 export const worksContent: IWorksContent[] = [
   {
+    id: "0",
+    image: "/assets/works/works-hashmicro.png",
+    title: "HashMicro",
+    year: "2025-2026",
+    icons: ["mdi:wordpress", "ri:bootstrap-fill", "devicon-plain:php"],
+    role: "Front-End Web Developer (team)",
+    tech: "PHP, HTML, CSS, JavaScript, WordPress, Bootstrap",
+    links: [
+      {
+        title: "Website",
+        url: "https://bosshire.co.id/en/publics/home-page/",
+      },
+    ],
+    description:
+      "Developed and maintained web products for the APAC market using PHP and WordPress. Collaborated in a fast-paced team environment to implement UI/UX designs into functional code, while ensuring technical SEO standards and web performance optimization were consistently met.",
+  },
+  {
     id: "1",
     image: "/assets/works/works-bosshire.png",
     title: "Bosshire",
@@ -16,7 +33,7 @@ export const worksContent: IWorksContent[] = [
       },
     ],
     description:
-      "The biggest project I’ve ever been involved in was a company profile and job portal website that facilitates application activities for both candidates and employers. This project give me valuable experience working as part of a team alongside other front-end developer, back-end developers, QA engineers, and product designers.",
+      "One of the biggest project I’ve ever been involved in was a company profile and job portal website that facilitates application activities for both candidates and employers. This project give me valuable experience working as part of a team alongside other front-end developer, back-end developers, QA engineers, and product designers.",
   },
   {
     id: "2",

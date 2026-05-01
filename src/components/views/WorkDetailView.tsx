@@ -13,7 +13,7 @@ function WorkDetailView({ id }: { id: string }) {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-8">
           <div className="col-span-2">
             <div className="flex justify-between items-center mb-5">
-              <h1 className="font-semibold text-4xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+              <h1 className="font-semibold text-4xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent title-font">
                 {currentWorkDetail.title}
               </h1>
               <p className="text-slate-400 py-1 px-3 outline rounded-full">
