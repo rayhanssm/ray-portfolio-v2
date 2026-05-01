@@ -35,7 +35,7 @@ function WorkView() {
               src={c.image}
               width={399}
               height={276}
-              sizes="100vh"
+              sizes="100vw"
               alt="a screenshot of ray's project"
             />
             <div className="flex justify-between items-center">
