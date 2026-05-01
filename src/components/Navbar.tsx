@@ -56,7 +56,7 @@ function Navbar() {
             <Link
               key={index}
               href={nav.page}
-              className={`text-xl md:text-2xl transition-all ${
+              className={`text-xl md:text-2xl transition-all title-font ${
                 pathName === "/" + nav.title.toLowerCase()
                   ? "text-yellow-300"
                   : "text-inherit"

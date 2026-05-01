@@ -188,7 +188,7 @@ function AboutView() {
 
           {/* Experience Section */}
           <div className="p-4 md:p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
-            <h2 className="mb-3 font-bold text-center md:text-left text-3xl md:text-2xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+            <h2 className="mb-3 font-bold text-center md:text-left text-3xl md:text-2xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent title-font">
               Experience
             </h2>
             <div className="flex flex-col gap-10">
@@ -230,7 +230,7 @@ function AboutView() {
 
           {/* Education Section */}
           <div className="p-4 md:p-8 flex flex-col gap-4 rounded-3xl shadow-2xl shadow-slate-900 bg-slate-900">
-            <h2 className="font-bold  text-center md:text-left text-3xl md:text-2xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+            <h2 className="font-bold  text-center md:text-left text-3xl md:text-2xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent title-font">
               Education
             </h2>
             <div className="flex flex-col gap-10">

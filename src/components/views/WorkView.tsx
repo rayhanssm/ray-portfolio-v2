@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 function WorkView() {
   return (
     <div className="px-4 py-24 md:p-24 bg-gradient-to-br from-slate-900 to-indigo-950">
-      <h1 className="font-bold text-4xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent">
+      <h1 className="font-bold text-6xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent title-font">
         Works
       </h1>
       <p className="text-slate-400 mt-2">
