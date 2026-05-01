@@ -23,8 +23,8 @@ function WorkDetailView({ id }: { id: string }) {
             <Image
               src={currentWorkDetail.image}
               alt="a screenshot of ray's project"
-              width="0"
-              height="0"
+              width={492}
+              height={340}
               sizes="100vw"
               className="w-full h-auto rounded-xl shadow-2xl"
             />

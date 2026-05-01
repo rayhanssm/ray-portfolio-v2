@@ -3,7 +3,7 @@ import { IWorksContent } from "@/types/types";
 export const worksContent: IWorksContent[] = [
   {
     id: "0",
-    image: "/assets/works/works-hashmicro.png",
+    image: "/assets/works/works-hashmicro-updated.png",
     title: "HashMicro",
     year: "2025-2026",
     icons: ["mdi:wordpress", "ri:bootstrap-fill", "devicon-plain:php"],

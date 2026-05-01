@@ -99,8 +99,8 @@ function AboutView() {
               <Image
                 src="/assets/potrait-ray.png"
                 alt="Potrait of Ray"
-                width={0}
-                height={0}
+                width={405}
+                height={409}
                 sizes="100vw"
                 className="w-full h-auto hidden md:block rounded-3xl shadow-2xl shadow-violet-950"
               />

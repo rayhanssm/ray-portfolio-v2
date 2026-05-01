@@ -27,8 +27,8 @@ function HeroSection() {
           src="/assets/projector.svg"
           alt="illustration of projecting ray's logo"
           draggable={false}
-          width="512"
-          height="523"
+          width={512}
+          height={523}
         />
         <motion.div
           animate={{ opacity: [1, 0.1, 0.9, 0.5, 1, 0.8] }}
@@ -42,8 +42,8 @@ function HeroSection() {
             src="/assets/projector-light.svg"
             alt="illustration of projecting ray's logo"
             draggable={false}
-            width="512"
-            height="523"
+            width={512}
+            height={523}
           />
         </motion.div>
       </div>

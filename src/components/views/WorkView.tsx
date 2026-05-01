@@ -33,8 +33,8 @@ function WorkView() {
             <Image
               className="w-full h-auto rounded-xl group-hover:shadow-2xl group-hover:shadow-indigo-600 group-hover:scale-105 transition-all"
               src={c.image}
-              width="399"
-              height="276"
+              width={399}
+              height={276}
               sizes="100vh"
               alt="a screenshot of ray's project"
             />
