@@ -16,7 +16,7 @@ function WorkDetailView({ id }: { id: string }) {
               <h1 className="font-semibold text-4xl bg-gradient-to-br from-sky-600 to-white bg-clip-text text-transparent title-font">
                 {currentWorkDetail.title}
               </h1>
-              <p className="text-slate-400 py-1 px-3 outline rounded-full">
+              <p className="text-slate-400 py-1 px-3 outline rounded-full flex-none">
                 {currentWorkDetail.year}
               </p>
             </div>
