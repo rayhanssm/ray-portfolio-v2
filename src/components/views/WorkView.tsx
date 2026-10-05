@@ -51,7 +51,7 @@ function WorkView() {
                   ))}
                 </div>
               </div>
-              <p className="text-slate-400 py-1 px-3 outline rounded-full">
+              <p className="text-sm px-4 py-1.5 rounded-full bg-indigo-950/80 text-sky-300 border border-sky-500/30 flex-none">
                 {c.year}
               </p>
             </div>
