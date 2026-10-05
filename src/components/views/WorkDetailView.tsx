@@ -34,13 +34,25 @@ function WorkDetailView({ id }: { id: string }) {
             <p className="mt-8 text-lg text-slate-400">
               Role: {currentWorkDetail.role}
             </p>
-            <p className="mt-3 mb-2 text-lg">
+            <div className="mt-3 mb-2">
               <span className="text-sm text-slate-400">
                 Technology/tools used:
-              </span>{" "}
-              <br />
-              {currentWorkDetail.tech}
-            </p>
+              </span>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {currentWorkDetail.tech
+                  .split(",")
+                  .map((item) => item.replace(/\.$/, "").trim())
+                  .filter(Boolean)
+                  .map((item, index) => (
+                    <span
+                      key={index}
+                      className="text-sm px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700"
+                    >
+                      {item}
+                    </span>
+                  ))}
+              </div>
+            </div>
             <div className="flex flex-col md:flex-row gap-4">
               {currentWorkDetail.links.map((l, index) => (
                 <LinkCustom

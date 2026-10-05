@@ -1,6 +1,5 @@
 import { ILinkCustom } from "@/types/types";
 import Link from "next/link";
-import React from "react";
 
 function LinkCustom({ text, href, rel, target }: ILinkCustom) {
   return (
